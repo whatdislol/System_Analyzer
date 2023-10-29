@@ -29,7 +29,7 @@ fn main() -> Result<(), io::Error> {
     current_report_option.select(Some(0));
     let mut tick = 0;
     let mut avg_cpu_tick_list: VecDeque<f32> = VecDeque::with_capacity(120 * 4);
-    let mut report_status = "No report is selected.";
+    let mut report_status = "No report is generated.";
 
     //setup scrollbars
     let mut app = App::default();
